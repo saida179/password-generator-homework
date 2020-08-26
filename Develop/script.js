@@ -18,6 +18,17 @@ function writePassword() {
  */
 function generatePassword(){
 
+  let passwordLength = prompt("Enter a password that is the length of at least 8 characters and no more than 128 characters!");
+
+  let passwordUperCase = confirm(" Do you want to use upcase?")
+
+  let passwordLowerCase = confirm(" Do you want to use lowercase?")
+  let passwordNumbers = confirm(" Do you want to use numbers?")
+  let passwordSpecialCharacters = confirm(" Do you want to use specail characters?")
+
+  console.log(passwordLength, passwordLowerCase, passwordNumbers, passwordSpecialCharacters, passwordUperCase)
+
+
   // Password is currently blank! We need to make a better one
   let password = "";
 
