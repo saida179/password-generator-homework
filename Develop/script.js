@@ -25,29 +25,41 @@ function generatePassword(){
   let passwordSpecialCharacters = confirm(" Do you want to use specail characters?")
 
   console.log(passwordLength, passwordLowerCase, passwordNumbers, passwordSpecialCharacters, passwordUpperCase)
+  
+//Arry for alphabet, numbers and characters
+let upperCase=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]; 
+let lowerCase =["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+let numbers =["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+let specialCharacters =["!", "0", "@", "#", "$", "%", "^", "&","*", "(", ")", "_", "+", "=", "?", "<", ">"];
 
-  const alphabetUpperCase=["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", 
-  "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+if (passwordLength === true) {
+  passwordUpperCase = confirm(" Do you want to use uppercase?");
+  console.log (passwordUpperCase);
+  let passwordLowerCase = confirm(" Do you want to use lowercase?");
+  console.log (passwordLowerCase)
+  let passwordNumbers = confirm(" Do you want to use numbers?");
+  console.log(passwordNumbers)
+  let passwordSpecialCharacters = confirm(" Do you want to use specail characters?");
+  console.log(passwordSpecialCharacters)
 
-  const alphabetLowerCase=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-  "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-
-  const numbers=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
-  const specialCharacters=
-
-
-  // Password is currently blank! We need to make a better one
-  let password = "";
-
-
-
-
-
-  return password;
 }
+  //loops
+  for (let i = 0; i < generatePassword; i++) {
+    password=password +value.allChars(math.floor()*math.floor(value.length-1));
+    
+  }
+ // Password is currently blank! We need to make a better one
+
+ let password = "";
+  
+ return password;
+}
+
 
 // Main Process
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
